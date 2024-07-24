@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+   
+    <nav id="desktop-nav">
+    <div class="logo">Prakhyath Shivappa</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">Prakhyath Shivappa</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menulinks">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<section id="profile">
+   <div class="section__pic-container">
+    <img src="./assets/profilephotoProfessional.PNG" alt="Prakhyath Shivappa profile picture">
+   </div>
+   <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="'title">Prakhyath Shivappa</h1>
+    <p class="section__text__p2">M.sc. Financial Engineering | Quantitaive Research Analyst</p>
+    <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/PrakhyathResume.pdf')">
+            Download CV
+        </button>
+
+        <button class="btn btn-color-1" onclick="location.href='./Contact'">
+            Contact Info
+        </button>
+    </div>
+    <div id="social-container">
+        <img src="./assets/linkedin.png" alt="My LinkdIn profile"
+        class="icon" onclick="location.href='https://www.linkedin.com/in/prakhyath-shivappa-298423149/'"
+        >
+        <img src="./assets/github.png" alt="My Github profile"
+        class="icon" onclick="location.href='https://github.com/PrakhyathS'"
+        >
+
+    </div>
+   </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <!-- <div class="section__pic-container">
+            <img src="./assets/Graduate.jpeg" 
+            alt="Profile picture"
+             class="about-pic">
+        </div> -->
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" 
+                    alt="Experience icon"
+                    class="icon">
+                    <h3>Experience</h3>
+                    <p>1+ years <br/> 
+                        Quantitaive Research Analyst  <br/>
+                     Ebullient Securities Pvt</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" 
+                    alt="Education icon"
+                    class="icon">
+                    <h3>Education</h3>
+                    <p>B.Sc. Mechanical Engineering <br/>
+                        PESIT, Bengaluru <br/>
+                         M.Sc. Financial Engineering <br/>
+                        Stevens Institute of Technology, New Jersey </p>
+
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I am an international student who recently graduated with a Master's in Financial Engineering
+                     from the Stevens Institute of Technology. My academic journey has been deeply
+                      rooted in quantitative disciplines, focusing on Algorithmic Trading, Statistics, and Data Science.
+                </p>
+                <p>
+                    In my role as a Quantitative Research Analyst at Ebullient Securities, I led the backtesting
+                     and development of long-short multi-factor strategies, conducted alpha research, optimized 
+                     portfolio performance, and handled extensive time-series data.
+                </p>
+                <p>
+                     I have been passionately invested in Quantitative Research and Development across the
+                     crypto, equity, and derivatives markets, I am deeply passionate about this field. Outside of my
+                      professional interests, I enjoy playing cricket and practicing Ashtanga Yoga. I am also an 
+                      avid enthusiast of philosophy and often engage in discussions about it. Additionally,
+                    I explore Indian Classical music, literature, and cooking whenever I get the chance.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png"
+     alt="Arrow icon"
+     class="icon arrow"
+     onclick="location.href='./#experience'">
+</section>
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers"> 
+        <div class="details-container">
+            <h2 class="experience-sub-title"> Research Tools</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Python</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>C++</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>R</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>SQL</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Bloomberg Terminal</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>HTML / CSS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Easy Language</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="details-container">
+            <h2 class="experience-sub-title">Computational Methods</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Algorithmic Trading</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Time Series Models</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Risk Models</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Pricing Models</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Stocastic Models</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>Portfolio Optimization Models</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>GPU Computing</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+      </div>  
+    </div>
+    <img src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/bank-of-america-brand-logo.png" alt="Project 1"
+                class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">Constructing and Managing Portfolios in Quantitative Wealth and Investment Management [QWIM] - Capestone Project </h2>
+            <!-- Add additional project details here -->
+            <p class="project-details">
+                This project involved developing and managing portfolios using various quantitative techniques. Key aspects included:
+            </p>
+            <ul class="project-details-list">
+                <li>Backtesting and optimizing multi-factor strategies</li>
+                <li>Alpha research and implementation</li>
+                <li>Portfolio performance analysis and optimization</li>
+                <li>Handling large sets of time-series data</li>
+            </ul>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"onclick="location.
+                href='https://github.com/PrakhyathS/Portfolio-construction'">
+                Github
+                </button>
+                <!-- <button class="btn btn-color-2 project-btn"onclick="location.
+                href='https://github.com'">
+                Live Demo
+                </button> -->
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/Realised_Volatility.png" alt="Project 2"
+                class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title"> Realised Volatility Prediction </h2>
+            <!-- Add additional project details here -->
+            <p class="project-details">
+                This project aims to develop models that predict short-term volatility for stocks across various sectors, essential for pricing options and financial products:
+            </p>
+            <ul class="project-details-list">
+                <li>Developing predictive models for short-term volatility</li>
+                <li>Using statistical and machine learning techniques to improve accuracy</li>
+                <li>Evaluating predictions using root mean square percentage error (RMSPE)</li>
+                <li>Assessing the impact of volatility predictions on the pricing of options and other financial products</li>
+            </ul>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"onclick="location.
+                href='https://github.com/PrakhyathS/Realized-Volatility'">
+                Github
+                </button>
+                <!-- <button class="btn btn-color-2 project-btn"onclick="location.
+                href='https://github.com'">
+                Live Demo
+                </button> -->
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/lastpricepredict.png" alt="Project 3"
+                class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title"> Nasdaq Closing Price Prediction </h2>
+            <!-- Add additional project details here -->
+            <p class="project-details">
+                Develop a model to forecast Nasdaq stock closing price movements in the last ten minutes of trading, leveraging order book and closing auction data to gauge supply and demand:
+            </p>
+            <ul class="project-details-list">
+                <li>Predicting closing price movements for Nasdaq-listed stocks</li>
+                <li>Leveraging order book and closing auction data</li>
+                <li>Understanding and modeling supply and demand dynamics</li>
+                <li>Identifying potential trading opportunities in the final ten minutes of trading</li>
+                <li>Evaluating predictions using Mean Absolute Error (MAE)</li>
+            </ul>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"onclick="location.
+                href='https://github.com/PrakhyathS/Close-Price-Prediction'">
+                Github
+                </button>
+                <!-- <button class="btn btn-color-2 project-btn"onclick="location.
+                href='https://github.com'">
+                Live Demo
+                </button> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'">
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container ">
+            <img src="./assets/email.png" 
+            alt="Email icon"
+            class="icon contact-icon">
+            <p><a href="mailto:prakhyathshivappa@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container ">
+            <img src="./assets/linkedin.png" 
+            alt="Email icon"
+            class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/prakhyath-shivappa-298423149/">LinkedIn</a></p>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>  
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Prakhyath Shivappa. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
