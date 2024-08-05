@@ -1,103 +1,154 @@
+/* For screens up to 1400px */
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+  #profile {
+    height: auto;
+    margin-bottom: 4rem; /* Ensure spacing below profile */
+  }
+
+  .about-containers {
+    flex-wrap: wrap; /* Allow wrapping of items */
+  }
+  #experience {
+    margin: 2rem auto;
+  }
+  #contact,
+  #projects {
+    height: auto; /* Allow sections to expand naturally */
+    padding: 1rem; /* Add padding for content spacing */
+    box-sizing: border-box; /* Include padding in width */
+    overflow: hidden; /* Prevent overflow if necessary */
+  }
+
+  #contact {
+    margin-top: 2rem; /* Space above contact section */
+  }
+
+  #projects {
+    margin-bottom: 2rem; /* Space below projects section */
+  }
+
+  /* Ensure containers align correctly */
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between sections */
+  }
 }
-  
+
+/* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  #desktop-nav {
+    display: none; /* Hide desktop navigation */
+  }
+
+  #hamburger-nav {
+    display: flex; /* Show hamburger navigation */
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem; /* Space above experience section */
+  }
+
+  #profile,
+  .section-container {
+    display: block; /* Ensure these sections display correctly */
+  }
+
+  .arrow {
+    display: none; /* Hide arrows if not needed */
+  }
+
+  section,
+  .section-container {
+    height: auto; /* Allow sections to expand naturally */
+  }
+
+  section {
+    margin: 0 5%; /* Margins for section */
+  }
+
+  .section__pic-container {
+    width: 275px; /* Width of section image */
+    height: 275px; /* Height of section image */
+    margin: 0 auto 2rem; /* Center image with space below */
+  }
+
+  .about-containers {
+    margin-top: 0; /* Remove top margin */
+  }
 }
-  
+
+/* For screens up to 600px */
 @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 45vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0.1rem; /* Adjusted margin */
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  #contact,
+  footer {
+    height: 45vh; /* Adjust height for smaller screens */
+  }
+
+  #profile {
+    height: auto; /* Allow profile section to adjust height */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  article {
+    font-size: 1rem; /* Font size for articles */
+  }
+
+  footer nav {
+    height: auto; /* Ensure footer nav height adjusts */
+    margin-bottom: 2rem; /* Space below footer nav */
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap; /* Allow wrapping of items */
+  }
+
+  .contact-info-container {
+    margin: 0.1rem; /* Adjust margin for contact info */
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem; /* Font size for contact info and nav links */
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem; /* Font size for experience sub-titles */
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Font size for logo */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 0.5rem; /* Space between nav links */
+    text-align: center; /* Center-align text */
+  }
+
+  .section__pic-container {
+    width: auto; /* Adjust width for smaller screens */
+    height: 46vw; /* Height relative to viewport width */
+    justify-content: center; /* Center content */
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem; /* Font size for section text */
+  }
+
+  .title {
+    font-size: 2rem; /* Font size for titles */
+  }
+
+  .text-container {
+    text-align: justify; /* Justify text alignment */
+  }
+}
+
+/* Apply box-sizing globally for all elements */
+*, *::before, *::after {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
